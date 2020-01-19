@@ -20,7 +20,7 @@ f.close()
 
 print ">> Obtendo informacoes sobre o versionamento do arquivo ...\n\n"
 #fileInfo = subprocess.check_output("svn info \"" + os.getcwd() + "\info.txt\"")
-fileInfo = subprocess.check_output("svn info \"" + "\info.txt\"")
+fileInfo = subprocess.check_output("svn info \"" , "\info.txt\"")
 print fileInfo + "\n"
 
 p = open("C:\checkInfo\password.txt",'r')
