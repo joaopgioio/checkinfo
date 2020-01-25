@@ -1,1 +1,1 @@
-Arquivo criado para teste - Esse arquivo foi croado para fazermos testes no curso de Jenkins.
+Arquivo criado para teste - Esse arquivo foi criado para fazermos testes no curso de Jenkins.
