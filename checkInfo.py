@@ -35,5 +35,5 @@ password = p.read()
 p.close() 
 
 print ">> Log do Git:\n\n"
-logSVN = subprocess.check_output("git log \"" + os.getcwd() + "\info.txt\" --username brunocaeo --password " + password)
-print logSVN + "\n\n"
+logGIT = subprocess.check_output("git log \"" + os.getcwd() + "\info.txt\" --author=joaopgioio@gmail.com " + password)
+print logGIT + "\n\n"
