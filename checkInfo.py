@@ -34,6 +34,6 @@ p = open("C:\Program Files (x86)\Jenkins\workspace\check info\password.txt",'r')
 password = p.read()
 p.close() 
 
-print ">> Log do SVN:\n\n"
-logSVN = subprocess.check_output("svn log \"" + os.getcwd() + "\info.txt\" --username brunocaeo --password " + password)
+print ">> Log do Git:\n\n"
+logSVN = subprocess.check_output("git log \"" + os.getcwd() + "\info.txt\" --username brunocaeo --password " + password)
 print logSVN + "\n\n"
