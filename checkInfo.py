@@ -30,7 +30,7 @@ fileInfo = subprocess.check_output("git show \"" + os.getcwd() + "\info.txt\"")
 #fileInfo = subprocess.check_call(["ls", "-l"])
 print fileInfo + "\n"
 
-p = open("C:\Users\João Paulo Alves\Cursos_Devops\checkinfo\password.txt",'r')
+p = open("C:\Program Files (x86)\Jenkins\workspace\check info\password.txt",'r')
 password = p.read()
 p.close() 
 
