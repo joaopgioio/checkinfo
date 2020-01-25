@@ -19,7 +19,6 @@ print content + "\n\n"
 f.close()
 
 print ">> Obtendo informacoes sobre o versionamento do arquivo ...\n\n"
-print os.getcwd()
 fileInfo = subprocess.check_output("git log " + "info.txt")
 #fileInfo = subprocess.check_output("git show \"" + os.getcwd() + "\info.txt\"")
 #shell=True
@@ -29,7 +28,7 @@ fileInfo = subprocess.check_output("git log " + "info.txt")
 #fileInfo = subprocess.check_output("svn info \"" + os.getcwd() + "\info.txt\"")
 #fileInfo = subprocess.check_output("svn info \"" , "\info.txt\"")
 #fileInfo = subprocess.check_call(["ls", "-l"])
-print "Caiu no fileinfo " + fileInfo + "\n"
+print ">>>>>>>>> Informações do commit realizado no arquivo info.txt <<<<<<<<<< \n" + fileInfo + "\n"
 
 p = open("C:\Program Files (x86)\Jenkins\workspace\check info\password.txt",'r')
 password = p.read()
