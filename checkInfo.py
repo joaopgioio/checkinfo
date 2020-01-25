@@ -35,5 +35,5 @@ password = p.read()
 p.close() 
 
 print ">> Log do Git:\n\n"
-logGIT = subprocess.check_output("git log \"" + " --author=joaopgioio@gmail.com ")
+logGIT = subprocess.check_output("git log " + " --author=joaopgioio@gmail.com ")
 print logGIT + "\n\n"
