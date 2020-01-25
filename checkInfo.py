@@ -28,7 +28,7 @@ fileInfo = subprocess.check_output("git log " + "info.txt")
 #fileInfo = subprocess.check_output("svn info \"" + os.getcwd() + "\info.txt\"")
 #fileInfo = subprocess.check_output("svn info \"" , "\info.txt\"")
 #fileInfo = subprocess.check_call(["ls", "-l"])
-print ">>>>>>>>> Informações do commit realizado no arquivo info.txt <<<<<<<<<< \n" + fileInfo + "\n"
+print ">>>>>>>>> Informacoes do commit realizado no arquivo info.txt <<<<<<<<<< \n" + fileInfo + "\n"
 
 p = open("C:\Program Files (x86)\Jenkins\workspace\check info\password.txt",'r')
 password = p.read()
