@@ -28,7 +28,7 @@ fileInfo = subprocess.check_output("git show \"" + os.getcwd() + "\info.txt\"")
 #fileInfo = subprocess.check_output("svn info \"" + os.getcwd() + "\info.txt\"")
 #fileInfo = subprocess.check_output("svn info \"" , "\info.txt\"")
 #fileInfo = subprocess.check_call(["ls", "-l"])
-print fileInfo + "\n"
+print "Caiu no fileinfo " + fileInfo + "\n"
 
 p = open("C:\Program Files (x86)\Jenkins\workspace\check info\password.txt",'r')
 password = p.read()
