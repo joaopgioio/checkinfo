@@ -19,7 +19,7 @@ print content + "\n\n"
 f.close()
 
 print ">> Obtendo informacoes sobre o versionamento do arquivo ...\n\n"
-fileInfo = subprocess.check_output("git log " + "info.txt")
+fileInfo = subprocess.check_output("git log -p " + "info.txt")
 #fileInfo = subprocess.check_output("git show \"" + os.getcwd() + "\info.txt\"")
 #shell=True
 #p = Popen(['grep', pattern, filename], stdin=PIPE, stdout=PIPE, stderr=PIPE, bufsize=-1)
