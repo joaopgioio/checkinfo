@@ -21,7 +21,8 @@ f.close()
 print ">> Obtendo informacoes sobre o versionamento do arquivo ...\n\n"
 print os.getcwd()
 fileInfo = subprocess.check_output("svn info \"" + os.getcwd() + "\info.txt\"", shell=False)
-shell=True
+#shell=True
+#p = Popen(['grep', pattern, filename], stdin=PIPE, stdout=PIPE, stderr=PIPE, bufsize=-1)
 #fileInfo = subprocess.Popen(["\Cursos", "dir"])
 #fileInfo = subprocess.Popen(["ls", "-l", "/dev/null"])
 #fileInfo = subprocess.check_output("svn info \"" + os.getcwd() + "\info.txt\"")
