@@ -19,7 +19,7 @@ print content + "\n\n"
 f.close()
 
 print ">> Obtendo informacoes sobre o versionamento do arquivo ...\n\n"
-fileInfo = check_output(["ls", "-l", "/dev/null"])
+fileInfo = subprocess.check_output(["ls", "-l", "/dev/null"])
 #fileInfo = subprocess.check_output("svn info \"" + os.getcwd() + "\info.txt\"")
 #fileInfo = subprocess.check_output("svn info \"" , "\info.txt\"")
 #fileInfo = subprocess.check_call(["ls", "-l"])
